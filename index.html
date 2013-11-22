@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>COMP2013 VRCore Project Dashboard</title>
+
+        <script src="scripts/classList.js"></script>
+        <script src="scripts/main.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="demos.css" />
+
+    </head>
+    <body class="loading">
+        <section id="wall">
+            <h1>VRCore Project<span>Mohan Dai</span></h1>
+            
+            <section id="overview">
+
+            </section>
+
+            <section><h1>VRCore Dashboard</h1>
+
+                <article id="wordpress" class="">
+                    <h1>Personal Wordpress Blog</h1>
+                    <script src="scripts/canvas2d.js"></script>
+                    <article>
+                    	<iframe width="900px" height="600px" src="http://mohandai.wordpress.com" frameborder="0" allowfullscreen></iframe>
+                   
+                    </article>
+                        
+                </article>
+
+
+                <article id="css3" class="closed">
+                    <h1>GIT</h1>
+                    <article id="gitcommit">
+                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+                        <script src="github-commits-widget/js/github.commits.widget.js"></script>
+  
+                        <script>$(function() {$('#gitcommit').githubInfoWidget({ 
+                            user: 'mohandai', repo: 'comp2013', branch: 'master', last: 15, limitMessageTo: 30 });});</script>  
+                    </article>
+
+                </article>
+            </section>
+        </section>
+        <footer>
+                <script>
+                    document.write(document.lastModified);
+                </script>
+        </footer>
+        <script src="../../shared/mozilla-badge.js" defer></script>
+    </body>
+</html>
+
