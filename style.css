@@ -1,8 +1,8 @@
 /***** @font-face *****/
-@font-face { font-family: bebas; src: url(http://cscw3.azurewebsites.net/fonts/BebasNeue.otf);}
-@font-face { font-family: ubuntu; src: url(http://cscw3.azurewebsites.net/fonts/ubuntu.ttf);}
-@font-face { font-family: marketing; src: url(http://cscw3.azurewebsites.net/fonts/MarketingScript.ttf);}
-@font-face { font-family: megalopolis; src: url(http://cscw3.azurewebsites.net/fonts/MEgalopolisExtra.woff);}
+@font-face { font-family: bebas; src: url(fonts/BebasNeue.otf);}
+@font-face { font-family: ubuntu; src: url(fonts/ubuntu.ttf);}
+@font-face { font-family: marketing; src: url(fonts/MarketingScript.ttf);}
+@font-face { font-family: megalopolis; src: url(fonts/MEgalopolisExtra.woff);}
 
 
 /***** general stuff *****/
