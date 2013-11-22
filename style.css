@@ -20,7 +20,7 @@ html { box-shadow: inset 0px 0px 20px black; }
 
 #wall { background-color: #E1E6E9; width: 900px; padding: 20px; margin: auto; margin-top: 10px; box-shadow: 0px 0px 5px black;}
 
-#wall > h1 {font-size: 90px; width: 500px; vertical-align: middle; font-weight: normal; text-align: center; margin: auto; margin-top: 30px; text-align: center; position: relative;}
+#wall > h1 {font-size: 70px; width: 500px; vertical-align: middle; font-weight: normal; text-align: center; margin: auto; margin-top: 30px; text-align: center; position: relative;}
 #wall > h1 > span {font-size: 30px; position: absolute; bottom: -2px; right: 48px; color: #999;}
 
 #shortcredit a { color: #555; }
@@ -51,10 +51,10 @@ html { box-shadow: inset 0px 0px 20px black; }
 /**********************/
 
 /* Title */
-#wall > section > h1 { font-size: 100px; line-height: 100px; color: #2EC4DD; font-weight: normal; border-top: 2px solid black; padding-top: 20px; }
+#wall > section > h1 { font-size: 70px; line-height: 100px; color: #2EC4DD; font-weight: normal; border-top: 2px solid black; padding-top: 20px; }
 #wall > section:nth-of-type(2) > h1 { margin-top: 40px; border-top: none; }
 #wall > section > article > h1:after { content: "▾"; margin-left: 25px; font-size: 50px; vertical-align: middle; -moz-transition-duration: 1s; -moz-transform: rotate(0deg);  -webkit-transition-duration: 1s; -webkit-transform: rotate(0deg);  transition-duration: 1s; transform: rotate(0deg); }
-#wall > section > article > h1 { font-size: 80px; height: 80px; font-weight: normal; background-image: url(imgs/dashed.png); background-repeat: repeat-x; background-position: left bottom; cursor: pointer; padding-bottom: 10px; -moz-transition: text-indent 0.1s; -webkit-transition: text-indent 0.1s; transition: text-indent 0.1s; }
+#wall > section > article > h1 { font-size: 60px; height: 80px; font-weight: normal; background-image: url(imgs/dashed.png); background-repeat: repeat-x; background-position: left bottom; cursor: pointer; padding-bottom: 10px; -moz-transition: text-indent 0.1s; -webkit-transition: text-indent 0.1s; transition: text-indent 0.1s; }
 #wall > section > article > h1:hover { text-indent: 5px; }
 #wall > section > article > article > h1 { font-size: 32px; line-height: 32px; letter-spacing: 0px; vertical-align: bottom; font-weight: normal; position: absolute; bottom: 200px; }
 
