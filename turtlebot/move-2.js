@@ -4,7 +4,7 @@
 		var tempContext = null; // global variable 2d context
 		var started = false;
 		var mText_canvas = null;
-		var x = 0, y =0, angle = 0, anglesteps = 4;
+		var x = 0, y =0, angle = 0;
 		window.add
 		(window.onload = function() {
 			var canvas = document.getElementById("event_canvas");
@@ -22,10 +22,7 @@
 			tempContext.fillStyle="blue";
 			x = canvas.width/2;
 			y = canvas.height/2;
-			tempContext.moveTo(x, y-50);
-			tempContext.lineTo(x-50, y+50);
-			tempContext.lineTo(x+50, y+50);
-			tempCOntext.fill();
+			tempContext.fillRect(x-40, y-20, 80, 40);
 	
 	        // key event - use DOM element as object
 	        canvas.addEventListener('keydown', doKeyDown, true);
@@ -50,33 +47,31 @@
 			var keyID = e.keyCode ? e.keyCode :e.which;
 			if(keyID === 38 || keyID === 87)  { // up arrow and W
 				clearCanvas();
-				x = x + 2*Math.cos(2*Math.PI*(angle/360));
-				y = y + 2*Math.sin(2*Math.PI*(angle/360));
-				tempContext.lineTo(x + 35, y + 25);
-				tempContext.stroke();
-				tempContext.drawImage(img,x,y);
-				e.preventDefault();
-			}			
-			if(keyID === 37 || keyID === 65)  { // left arrow and A
-				clearCanvas();
-				angle = angle - anglesteps;
+				y = y - 10;
 				tempContext.lineTo(x, y);
 				tempContext.stroke();
-				img.rotate(-anglesteps*Math.PI/180);
-				tempContext.drawImage(img,x,y);
+				tempContext.fillRect(x-40, y-20, 80, 40);
 				e.preventDefault();
 			}
 			if(keyID === 39 || keyID === 68)  { // right arrow and D
 				clearCanvas();
-				angle = angle + anglesteps;
+				x = x + 10;
 				tempContext.lineTo(x, y);
 				tempContext.stroke();
-				img.rotate(anglesteps*Math.PI/180);
+				tempContext.fillRect(x-40, y-20, 80, 40);
 				e.preventDefault();
 			}
 			if(keyID === 40 || keyID === 83)  { // down arrow and S
 				clearCanvas();
 				y = y + 10;
+				tempContext.lineTo(x, y);
+				tempContext.stroke();
+				tempContext.fillRect(x-40, y-20, 80, 40);
+				e.preventDefault();
+			}
+			if(keyID === 37 || keyID === 65)  { // left arrow and A
+				clearCanvas();
+				x = x - 10;
 				tempContext.lineTo(x, y);
 				tempContext.stroke();
 				tempContext.fillRect(x-40, y-20, 80, 40);
