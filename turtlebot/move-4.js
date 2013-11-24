@@ -9,9 +9,7 @@
 		var x = 0, y =0, angle = 0, anglesteps = 4;
 		
 		window.add
-		(window.onload = initialize());
-		
-		function initialize() {
+		(window.onload = function() {
 			var canvas = document.getElementById("event_canvas");
 			var reset = document.getElementById("reset");
 			console.log(canvas.parentNode.clientWidth);
@@ -49,7 +47,7 @@
 	        canvas.addEventListener('mouseup',   doMouseUp, false);
 	        reset.addEventListener("mousedown", doReset, false)
 
-		}
+		});
 		
 		function getPointOnCanvas(canvas, x, y) {
 			var bbox = canvas.getBoundingClientRect();
@@ -137,15 +135,7 @@
 		}
 		
 		function doReset() {
-			clearCanvas();
 			a.restore();
 			tempContext.restore();
-			initialize();
 		}
 		
-		function doMouseDown(event) {
-			clearCanvas();
-			a.restore();
-			tempContext.restore();
-			initialize();
-		}
