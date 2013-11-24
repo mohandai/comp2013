@@ -37,7 +37,7 @@ html { box-shadow: inset 0px 0px 20px black; }
 #overview { margin: 5px; position: relative; background-color: #343838; box-shadow: inset 0px 0px 20px black; height: 320px; border-radius: 10px; margin-left: -5px; margin-right: -5px; }
 
 .tag {font-size: 18px; transition-duration: 1s;  -webkit-transition-duration: 1s;  -moz-transition-duration: 1s; cursor: default;}
-.tag.big {font-size: 50px;}
+.tag.big {font-size: 30px;}
 .tag { margin-top: 10px; margin-left: 15px; font-family: bebas; position: absolute; text-decoration: none; }
 .tag.c0{color: #005f6b;}
 .tag.c0:hover {color: #00a2b7;}
