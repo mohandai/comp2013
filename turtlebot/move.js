@@ -64,7 +64,7 @@
 				clearCanvas();
 				//x = x + 2*Math.cos(2*Math.PI*(angle/360));
 				//y = y + 2*Math.sin(2*Math.PI*(angle/360));
-				x = x + 2;
+				x = x + 8;
 				tempContext.lineTo(x, y);
 				tempContext.stroke();				
 				
