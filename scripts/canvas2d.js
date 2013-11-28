@@ -19,7 +19,8 @@ window.addEventListener("load", function() {
         var now     = new Date().getTime()+(window.mouse||[0,0])[0]*2-200;
 
         var canvas = document.getElementById('canvas2d');
-        var ctx = canvas.getContext('2d');
+        var ctx = null;
+        ctx = canvas.getContext('2d');
 
         ctx.globalCompositeOperation = 'copy';
         ctx.drawImage(canvas, 12+Math.cos(now/806+(window.mouse||[0,0])[0]/128),8+Math.sin(now/551+(window.mouse||[0,0])[1]/128),240-24,160-16,0,0,240,160);

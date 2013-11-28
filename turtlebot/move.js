@@ -8,8 +8,8 @@
 		var mText_canvas = null;
 		var x = 0, y =0, angle = 0, anglesteps = 4;
 		
-		window.add
-		(window.onload = initialize());
+		//window.add
+		window.onload = initialize();
 		
 		function initialize() {
 			var canvas = document.getElementById("event_canvas");
@@ -45,9 +45,9 @@
 	        
 	        // mouse event
 	        canvas.addEventListener("mousedown", doMouseDown, false);
-	        canvas.addEventListener('mousemove', doMouseMove, false);
-	        canvas.addEventListener('mouseup',   doMouseUp, false);
-	        reset.addEventListener("mousedown", doReset, false)
+	       // canvas.addEventListener('mousemove', doMouseMove, false);
+	       // canvas.addEventListener('mouseup',   doMouseUp, false);
+	     //   reset.addEventListener("mousedown", doReset, false)
 
 		}
 		

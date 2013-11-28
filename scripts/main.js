@@ -137,6 +137,7 @@ function toggleFold() {
             a[i].classList.remove("closed");
         }
     }
+   return false;
 }
 
 function createCloud() {
